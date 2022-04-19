@@ -1,0 +1,39 @@
+.become {
+  background-color: #fff;
+	padding-top: 150px;
+}
+
+.become-title {
+	max-width: 50%;
+}
+
+.become__list {
+  display: flex;
+	margin-top: 95px;
+	flex-wrap: wrap;
+}
+
+.become__item {
+  width: 23.5%;
+	margin-right: 2%;
+	overflow: hidden;
+	border-radius: 4px;
+	position: relative;
+}
+
+.become__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.become__text {
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-left: 54px;
+	padding-bottom: 64px;
+	font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+	color: var(--white-color);
+
+}
