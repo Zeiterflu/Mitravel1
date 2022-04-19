@@ -1,6 +1,7 @@
 .become {
   background-color: #fff;
 	padding-top: 150px;
+	padding-bottom: 120px;
 }
 
 .become-title {
@@ -19,6 +20,14 @@
 	overflow: hidden;
 	border-radius: 4px;
 	position: relative;
+	font-size: 0;
+	margin-bottom: 2%;
+}
+
+.become__image {
+	max-height: 100%;
+	object-fit: cover;
+
 }
 
 .become__item:nth-child(4n) {
@@ -35,5 +44,28 @@
   line-height: 31px;
   font-weight: 700;
 	color: var(--white-color);
+	transform: translateY(300px);
+  transition: transform 0.3s ease-in-out;
+}
 
+.become__item::before {
+	content: "";
+	background: var(--neptune-color);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.become__item:hover::before {
+  opacity: 0.9;
+	transform: opacity 0.3s easy-in-out;
+}
+
+.become__item:hover .become__text {
+	transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }

@@ -1,0 +1,20 @@
+.featured {
+	background-image: url(../../img/featured.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1080px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.featured__stories {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 35%;
+  background-color: #3C4A51;
+	opacity: 0.9;
+}
